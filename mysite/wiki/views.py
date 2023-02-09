@@ -97,7 +97,7 @@ def getallissuecomments(rep,proj):
             X_test = test_df[['len','tloc','cloc','tpos1','tpos2','clen','tlen','ppau','npau','aa','begauth','has_code','first_turn','last_turn']] 
             #print(X_test)
 
-            clf =lgb.Booster(model_file="./infotypedetectionlgbmodel.txt")
+            clf =lgb.Booster(model_file=os. getcwd()+"/mysite/infotypedetectionlgbmodel.txt")
             #print(bst)
             y_pred=clf.predict(X_test)
 
@@ -206,7 +206,7 @@ def get_wiki_summary(request):
         test_df[categ] = test_df[categ].apply(le.fit_transform)
         X_test = test_df[['len','tloc','cloc','tpos1','tpos2','clen','tlen','ppau','npau','aa','begauth','has_code','first_turn','last_turn']] 
         #print(X_test)
-        clf =lgb.Booster(model_file="./infotypedetectionlgbmodel.txt")
+        clf =lgb.Booster(model_file=os. getcwd()+"/mysite/infotypedetectionlgbmodel.txt")
         #print(bst)
         
         y_pred=clf.predict(X_test)
