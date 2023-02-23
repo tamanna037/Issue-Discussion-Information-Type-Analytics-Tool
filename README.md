@@ -22,17 +22,27 @@ Issue Information Type Detector(ITTD) Tool detects the information types each se
 
 ### How to run 
 1. Clone the repository of the project and go tho folder of the repository.
-2. In terminal, run the following commands:
+2. In terminal, run the following commands.
+3. First Install npm
    ```
-    npm install
+      npm install
+    ``` 
+4. Create a virtual environment
+   ```
     pip3 install virtualenv
     virtualenv newenv
     source newenv/bin/activate
+    ```
+5. Install other requirements
+  ```
     pip3 install -r requirements.txt
-    python -m spacy download en_core_web_sm
+   ```
+6. Run the extension on localserver at port 8080
+   ```
     python mysite/manage.py runserver
     
    ``` 
- 3. Visit chrome://extensions in your browser , Turn on Developer Mode,  Click Load Unpacked and Open the dist folder in the prompt that is displayed
- 4. Click on the extension button on your browser, select this extension and Input your github token. ![.](https://github.com/tamanna037/Issue-Discussion-Information-Type-Analytics-Tool/blob/main/img/token.png)
-5. Go to any repository or issue page to get the information type distribution. 
+
+7. Visit chrome://extensions in your browser , Turn on Developer Mode,  Click Load Unpacked and Open the dist folder in the prompt that is displayed
+8. Click on the extension button on your browser, select this extension and Input your github token. ![.](https://github.com/tamanna037/Issue-Discussion-Information-Type-Analytics-Tool/blob/main/img/token.png)
+9. Go to any repository or issue page to get the information type distribution. 
