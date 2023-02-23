@@ -45,4 +45,4 @@ Issue Information Type Detector(ITTD) Tool detects the information types each se
 
 7. Visit chrome://extensions in your browser , Turn on Developer Mode,  Click Load Unpacked and Open the dist folder in the prompt that is displayed
 8. Click on the extension button on your browser, select this extension and Input your github token. ![.](https://github.com/tamanna037/Issue-Discussion-Information-Type-Analytics-Tool/blob/main/img/token.png)
-9. Go to any repository or issue page to get the information type distribution. 
+9. Go to any issue page to get the information type distribution and for now go to [IKVM](https://github.com/ikvm-revived/ikvm) repositry to get the project distribution.
