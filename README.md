@@ -4,7 +4,7 @@
 The project is liscensed under MIT License, Copyright 2022 Tamanna. Get to know about the [liscense](https://github.com/tamanna037/InformationTypesDetectionNLP/blob/main/LICENSE) from here.
 
 ### Goal
-Issue Information Type Detector(ITTD) Tool detects the information types each sentence of a comment/post of a github issue is providng in order to support various software engineering activities.  The following 13 information types will be detected: 
+Issue Information Type Detector(ITTD) Tool detects the information types each sentence of a comment/post of a github issue is providng in order to support various software engineering activities.  The following 13 information types will be detected. Detailed information on information type can be found [here](https://uofc-my.sharepoint.com/:b:/g/personal/gias_uddin_ucalgary_ca/ESoFon0fZptLsMOZTT5bKTYBzqqC7G3W6-jt04HgYzzvtQ). 
 1. Action on Issue
 2. Bug Reproduction
 3. Contribution and Commitment 
@@ -22,17 +22,27 @@ Issue Information Type Detector(ITTD) Tool detects the information types each se
 
 ### How to run 
 1. Clone the repository of the project and go tho folder of the repository.
-2. In terminal, run the following commands:
+2. In terminal, run the following commands.
+3. First Install npm
    ```
-    npm install
+      npm install
+    ``` 
+4. Create a virtual environment
+   ```
     pip3 install virtualenv
     virtualenv newenv
     source newenv/bin/activate
+    ```
+5. Install other requirements
+  ```
     pip3 install -r requirements.txt
-    python -m spacy download en_core_web_sm
+   ```
+6. Run the extension on localserver at port 8080
+   ```
     python mysite/manage.py runserver
     
    ``` 
- 3. Visit chrome://extensions in your browser , Turn on Developer Mode,  Click Load Unpacked and Open the dist folder in the prompt that is displayed
- 4. Click on the extension button on your browser, select this extension and Input your github token. ![.](https://github.com/tamanna037/Issue-Discussion-Information-Type-Analytics-Tool/blob/main/img/token.png)
-5. Go to any repository or issue page to get the information type distribution. 
+
+7. Visit chrome://extensions in your browser , Turn on Developer Mode,  Click Load Unpacked and Open the dist folder in the prompt that is displayed
+8. Click on the extension button on your browser, select this extension and Input your github token. ![.](https://github.com/tamanna037/Issue-Discussion-Information-Type-Analytics-Tool/blob/main/img/token.png)
+9. Go to any repository or issue page to get the information type distribution. 
