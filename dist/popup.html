@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <style>
+        body {
+            width: 400px;
+        }
+        body, input[type="text"] {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+        }
+        input[type="text"] {
+            width: 90%;
+        }
+        input[type="checkbox"] {
+            vertical-align: middle;
+        }
+        footer {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--<img src="https://github.com/freyamade/github-user-languages/raw/master/img/logotype_horizontal.png" alt="gh-user-langs logo" width="400" height="92" />-->
+        <h2>Issue Discussion Information Type Analytics Tool</h2>
+    </header>
+    <main>   
+        <h3><label for="Information Types">Choose a default Information Type for summary:</label></h3>
+        <select name="Information Types" id="default-info-types">
+        <option value="Action on Issue">Action on Issue</option>
+        <option value="Bug Reproduction">Bug Reproduction</option>
+        <option value="Contribution and Commitment">Contribution and Commitment</option>
+        <option value="Expected Behaviour">Expected Behaviour</option>
+        <option value="Investigation and Exploration">Investigation and Exploration</option>
+        <option value="Motivation">Motivation</option>
+        <option value="Observed Bug Behaviour">Observed Bug Behaviour</option>
+        <option value="Potential New Issues and Requests">Potential New Issues and Requests</option>
+        <option value="Social Conversation">Social Conversation</option>
+        <option selected value="Solution Discussion">Solution Discussion</option>
+        <option value="Task Progress">Task Progress</option>
+        <option value="Usage">Usage</option>
+        <option value="Workarounds">Workarounds</option>
+        </select>
+        <br><br>
+
+        <h3>Personalize your information Types</h3>      
+        <input checked type="checkbox" name="personalized-info-types" value="Action on Issue">Action on Issue<br>      
+        <input checked type="checkbox" name="personalized-info-types" value="Bug Reproduction">Bug Reproduction<br>      
+        <input checked type="checkbox" name="personalized-info-types" value="Contribution and Commitment">Contribution and Commitment<br>    
+        <input checked type="checkbox" name="personalized-info-types" value="Expected Behaviour">Expected Behaviour<br>      
+        <input checked type="checkbox" name="personalized-info-types" value="Investigation and Exploration">Investigation and Exploration<br>    
+        <input checked type="checkbox" name="personalized-info-types" value="Motivation">Motivation<br>    
+        <input checked type="checkbox" name="personalized-info-types" value="Observed Bug Behaviour">Observed Bug Behaviour<br>      
+        <input checked type="checkbox" name="personalized-info-types" value="Potential New Issues and Requests">Potential New Issues and Requests<br>      
+        <input checked type="checkbox" name="personalized-info-types" value="Social Conversation">Social Conversation<br>    
+        <input checked type="checkbox" name="personalized-info-types" value="Solution Discussion">Solution Discussion<br>      
+        <input checked type="checkbox" name="personalized-info-types" value="Task Progress">Task Progress<br>      
+        <input checked type="checkbox" name="personalized-info-types" value="Usage">Usage<br>    
+        <input checked type="checkbox" name="personalized-info-types" value="Workarounds">Workarounds<br>   
+        <br>   
+        
+        <h3>Chart Settings</h3>   
+        
+          <input type="radio" id="pie" name="chartType" value="Pie Chart"
+                 checked>
+          <label for="pie">Pie Chart</label>
+
+          <input type="radio" id="bar" name="chartType" value="Bar Chart">
+          <label for="bar">Bar Chart</label>
+        <br><br>
+
+        <input type="checkbox" id="show-legend" checked/>   
+        <label for="show-legend"><span>Show Legend</span></label>
+        
+        
+        <h3>API Token <small>Click out of input to save</small></h3>
+        
+        <!--<label for="personal-access-token">Token (Click out of input to save)</label>-->
+        <input type="text" id="personal-access-token" enabled />
+        <p><a id="get-token" href="#">Click here</a> to generate token if you don't have any .</p>
+    </main>
+    <!--<footer>
+        <small>GitHub User Languages v1.0.13</small>
+    </footer>-->
+    <script src="js/popup.js"></script>
+</body>
+</html>
